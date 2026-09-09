@@ -70,7 +70,7 @@ const pair = await getRate('EUR', 'AED', { apiKey: 'art_live_...' });
 {
   bank: 'lb',
   name: 'Bank of Lithuania',
-  rate_date: '2026-09-07',   // Bank of Lithuania's own publication date
+  rate_date: '2026-09-09',   // Bank of Lithuania's own publication date
   source: 'EUR',
   target: 'AED',
   rate: 4.27721,
@@ -98,7 +98,7 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'lb',
   name: 'Bank of Lithuania',
-  rate_date: '2026-09-07',
+  rate_date: '2026-09-09',
   rates: [
     { "base": "EUR", "quote": "AED", "type": "reference", "value": 4.27721 },
     // … the rest of the published table (87 currencies vs EUR)
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-lithuania-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'AED', from: '2026-01-01', to: '2026-09-07' },
+  { source: 'EUR', target: 'AED', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'AED',
   from: '2026-01-01',
-  to: '2026-09-07',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-07', rate: 4.27721, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 4.27721, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -235,6 +235,14 @@ getRate('EUR', 'AED', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2015 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/lb.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/lb/latest.json`
 
 ## 🔗 Links
 

@@ -85,10 +85,10 @@ const pair = await getRate('EUR', 'AED', { apiKey: 'art_live_...' });
 {
   bank: 'lb',
   name: 'Bank of Lithuania',
-  rate_date: '2026-09-25',   // Bank of Lithuania's own publication date
+  rate_date: '2026-10-06',   // Bank of Lithuania's own publication date
   source: 'EUR',
   target: 'AED',
-  rate: 4.27721,
+  rate: 4.16977,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'lb',
   name: 'Bank of Lithuania',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "EUR", "quote": "AED", "type": "reference", "value": 4.27721 },
+    { "base": "EUR", "quote": "AED", "type": "reference", "value": 4.16977 },
     // … the rest of the published table (87 currencies vs EUR)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-lithuania-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'AED', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'EUR', target: 'AED', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'AED',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 4.27721, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 4.16977, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'

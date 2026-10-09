@@ -40,7 +40,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Bank of Lithuania table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-08** by Bank of Lithuania — 87 rates, first 60 shown. Updated 2026-10-08.
+Published **2026-10-09** by Bank of Lithuania — 86 rates, first 60 shown. Updated 2026-10-09.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -49,42 +49,41 @@ Published **2026-10-08** by Bank of Lithuania — 87 rates, first 60 shown. Upda
 | EUR | ALL | reference | 92.04039 |
 | EUR | AMD | reference | 412.66338 |
 | EUR | ARS | reference | 1730.84489 |
-| EUR | AUD | reference | 1.6079 |
+| EUR | AUD | reference | 1.611 |
 | EUR | AZN | reference | 1.92964 |
 | EUR | BAM | reference | 1.95587 |
 | EUR | BDT | reference | 139.60169 |
 | EUR | BHD | reference | 0.42799 |
 | EUR | BOB | reference | 13.64571 |
-| EUR | BRL | reference | 5.5953 |
+| EUR | BRL | reference | 5.6118 |
 | EUR | BYN | reference | 3.42726 |
-| EUR | CAD | reference | 1.5931 |
-| EUR | CHF | reference | 0.9309 |
+| EUR | CAD | reference | 1.5953 |
+| EUR | CHF | reference | 0.9326 |
 | EUR | CLP | reference | 1093.64876 |
-| EUR | CNY | reference | 7.4937 |
+| EUR | CNY | reference | 7.4972 |
 | EUR | COP | reference | 3816.7105 |
-| EUR | CZK | reference | 24.427 |
+| EUR | CZK | reference | 24.403 |
 | EUR | DJF | reference | 202.08858 |
-| EUR | DKK | reference | 7.4745 |
+| EUR | DKK | reference | 7.4739 |
 | EUR | DZD | reference | 151.65436 |
 | EUR | EGP | reference | 59.16923 |
 | EUR | ETB | reference | 182.63896 |
-| EUR | GBP | reference | 0.84645 |
+| EUR | GBP | reference | 0.84698 |
 | EUR | GEL | reference | 2.95733 |
 | EUR | GHS | reference | 13.23702 |
 | EUR | GNF | reference | 9985.47736 |
-| EUR | HKD | reference | 8.7722 |
-| EUR | HUF | reference | 366.75 |
-| EUR | IDR | reference | 19974.25 |
-| EUR | ILS | reference | 3.429 |
-| EUR | INR | reference | 108.1165 |
-| EUR | IQD | reference | 1487.17773 |
+| EUR | HKD | reference | 8.7783 |
+| EUR | HUF | reference | 366.25 |
+| EUR | IDR | reference | 20045.31 |
+| EUR | ILS | reference | 3.4423 |
+| EUR | INR | reference | 108.2635 |
 | EUR | IRR | reference | 1560514.65 |
 | EUR | ISK | reference | 137 |
 | EUR | JOD | reference | 0.80472 |
-| EUR | JPY | reference | 176.85 |
+| EUR | JPY | reference | 177.05 |
 | EUR | KES | reference | 147.23057 |
 | EUR | KGS | reference | 99.31224 |
-| EUR | KRW | reference | 1496.25 |
+| EUR | KRW | reference | 1502.79 |
 | EUR | KWD | reference | 0.35027 |
 | EUR | KZT | reference | 498.34069 |
 | EUR | LBP | reference | 101781.13392 |
@@ -96,14 +95,15 @@ Published **2026-10-08** by Bank of Lithuania — 87 rates, first 60 shown. Upda
 | EUR | MKD | reference | 61.6313 |
 | EUR | MNT | reference | 4078.38563 |
 | EUR | MUR | reference | 54.04931 |
-| EUR | MXN | reference | 20.2236 |
-| EUR | MYR | reference | 4.5692 |
+| EUR | MXN | reference | 20.1486 |
+| EUR | MYR | reference | 4.5768 |
 | EUR | MZN | reference | 72.70527 |
 | EUR | NGN | reference | 1510.16631 |
-| EUR | NOK | reference | 10.712 |
-| EUR | NZD | reference | 1.9977 |
+| EUR | NOK | reference | 10.717 |
+| EUR | NZD | reference | 2.0014 |
 | EUR | PAB | reference | 1.13525 |
 | EUR | PEN | reference | 3.90537 |
+| EUR | PHP | reference | 70.475 |
 
 [Full table on the Bank of Lithuania rates page](https://allratestoday.com/central-bank-rates-api/lb/) · Source: [Official rates published by LB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/lb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->

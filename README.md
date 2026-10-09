@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-lithuania-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-lithuania-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-lithuania-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![EUR/AED today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Flb%3Fsource%3DEUR%26target%3DAED&query=%24.rate&label=EUR%2FAED%20published%20by%20Bank%20of%20Lithuania&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/lb/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Flb%3Fsource%3DEUR%26target%3DAED&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/lb/)
 
 **Official Bank of Lithuania (Lithuania) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Lithuania itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Lithuania table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Bank of Lithuania — 87 rates, first 60 shown. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| EUR | AED | reference | 4.16977 |
+| EUR | AFN | reference | 73.70991 |
+| EUR | ALL | reference | 92.04039 |
+| EUR | AMD | reference | 412.66338 |
+| EUR | ARS | reference | 1730.84489 |
+| EUR | AUD | reference | 1.6079 |
+| EUR | AZN | reference | 1.92964 |
+| EUR | BAM | reference | 1.95587 |
+| EUR | BDT | reference | 139.60169 |
+| EUR | BHD | reference | 0.42799 |
+| EUR | BOB | reference | 13.64571 |
+| EUR | BRL | reference | 5.5953 |
+| EUR | BYN | reference | 3.42726 |
+| EUR | CAD | reference | 1.5931 |
+| EUR | CHF | reference | 0.9309 |
+| EUR | CLP | reference | 1093.64876 |
+| EUR | CNY | reference | 7.4937 |
+| EUR | COP | reference | 3816.7105 |
+| EUR | CZK | reference | 24.427 |
+| EUR | DJF | reference | 202.08858 |
+| EUR | DKK | reference | 7.4745 |
+| EUR | DZD | reference | 151.65436 |
+| EUR | EGP | reference | 59.16923 |
+| EUR | ETB | reference | 182.63896 |
+| EUR | GBP | reference | 0.84645 |
+| EUR | GEL | reference | 2.95733 |
+| EUR | GHS | reference | 13.23702 |
+| EUR | GNF | reference | 9985.47736 |
+| EUR | HKD | reference | 8.7722 |
+| EUR | HUF | reference | 366.75 |
+| EUR | IDR | reference | 19974.25 |
+| EUR | ILS | reference | 3.429 |
+| EUR | INR | reference | 108.1165 |
+| EUR | IQD | reference | 1487.17773 |
+| EUR | IRR | reference | 1560514.65 |
+| EUR | ISK | reference | 137 |
+| EUR | JOD | reference | 0.80472 |
+| EUR | JPY | reference | 176.85 |
+| EUR | KES | reference | 147.23057 |
+| EUR | KGS | reference | 99.31224 |
+| EUR | KRW | reference | 1496.25 |
+| EUR | KWD | reference | 0.35027 |
+| EUR | KZT | reference | 498.34069 |
+| EUR | LBP | reference | 101781.13392 |
+| EUR | LKR | reference | 375.62017 |
+| EUR | LYD | reference | 7.25782 |
+| EUR | MAD | reference | 10.9672 |
+| EUR | MDL | reference | 20.12883 |
+| EUR | MGA | reference | 4983.03229 |
+| EUR | MKD | reference | 61.6313 |
+| EUR | MNT | reference | 4078.38563 |
+| EUR | MUR | reference | 54.04931 |
+| EUR | MXN | reference | 20.2236 |
+| EUR | MYR | reference | 4.5692 |
+| EUR | MZN | reference | 72.70527 |
+| EUR | NGN | reference | 1510.16631 |
+| EUR | NOK | reference | 10.712 |
+| EUR | NZD | reference | 1.9977 |
+| EUR | PAB | reference | 1.13525 |
+| EUR | PEN | reference | 3.90537 |
+
+[Full table on the Bank of Lithuania rates page](https://allratestoday.com/central-bank-rates-api/lb/) · Source: [Official rates published by LB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/lb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 

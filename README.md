@@ -42,7 +42,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Bank of Lithuania — 86 rates, first 60 shown. Updated 2026-10-15.
+Published **2026-10-16** by Bank of Lithuania — 86 rates, first 60 shown. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -51,41 +51,41 @@ Published **2026-10-15** by Bank of Lithuania — 86 rates, first 60 shown. Upda
 | EUR | ALL | reference | 92.04039 |
 | EUR | AMD | reference | 412.66338 |
 | EUR | ARS | reference | 1730.84489 |
-| EUR | AUD | reference | 1.5971 |
+| EUR | AUD | reference | 1.6218 |
 | EUR | AZN | reference | 1.92964 |
 | EUR | BAM | reference | 1.95587 |
 | EUR | BDT | reference | 139.60169 |
 | EUR | BHD | reference | 0.42799 |
 | EUR | BOB | reference | 13.64571 |
-| EUR | BRL | reference | 5.6246 |
+| EUR | BRL | reference | 5.6679 |
 | EUR | BYN | reference | 3.42726 |
-| EUR | CAD | reference | 1.5918 |
-| EUR | CHF | reference | 0.933 |
+| EUR | CAD | reference | 1.5923 |
+| EUR | CHF | reference | 0.9305 |
 | EUR | CLP | reference | 1093.64876 |
-| EUR | CNY | reference | 7.4925 |
+| EUR | CNY | reference | 7.4993 |
 | EUR | COP | reference | 3816.7105 |
-| EUR | CZK | reference | 24.357 |
+| EUR | CZK | reference | 24.353 |
 | EUR | DJF | reference | 202.08858 |
-| EUR | DKK | reference | 7.4754 |
+| EUR | DKK | reference | 7.475 |
 | EUR | DZD | reference | 151.65436 |
 | EUR | EGP | reference | 59.16923 |
 | EUR | ETB | reference | 182.63896 |
-| EUR | GBP | reference | 0.84385 |
+| EUR | GBP | reference | 0.8461 |
 | EUR | GEL | reference | 2.95733 |
 | EUR | GHS | reference | 13.23702 |
 | EUR | GNF | reference | 9985.47736 |
-| EUR | HKD | reference | 8.7859 |
-| EUR | HUF | reference | 363.3 |
-| EUR | IDR | reference | 20062.67 |
-| EUR | ILS | reference | 3.4443 |
-| EUR | INR | reference | 106.5283 |
+| EUR | HKD | reference | 8.7953 |
+| EUR | HUF | reference | 363.6 |
+| EUR | IDR | reference | 20112.25 |
+| EUR | ILS | reference | 3.4769 |
+| EUR | INR | reference | 106.5408 |
 | EUR | IRR | reference | 1560514.65 |
 | EUR | ISK | reference | 136.4 |
 | EUR | JOD | reference | 0.80472 |
-| EUR | JPY | reference | 177.39 |
+| EUR | JPY | reference | 177.06 |
 | EUR | KES | reference | 147.23057 |
 | EUR | KGS | reference | 99.31224 |
-| EUR | KRW | reference | 1496.54 |
+| EUR | KRW | reference | 1508.48 |
 | EUR | KWD | reference | 0.35027 |
 | EUR | KZT | reference | 498.34069 |
 | EUR | LBP | reference | 101781.13392 |
@@ -97,15 +97,15 @@ Published **2026-10-15** by Bank of Lithuania — 86 rates, first 60 shown. Upda
 | EUR | MKD | reference | 61.6313 |
 | EUR | MNT | reference | 4078.38563 |
 | EUR | MUR | reference | 54.04931 |
-| EUR | MXN | reference | 20.56 |
-| EUR | MYR | reference | 4.5704 |
+| EUR | MXN | reference | 20.7596 |
+| EUR | MYR | reference | 4.5757 |
 | EUR | MZN | reference | 72.70527 |
 | EUR | NGN | reference | 1510.16631 |
-| EUR | NOK | reference | 10.6035 |
-| EUR | NZD | reference | 1.9941 |
+| EUR | NOK | reference | 10.652 |
+| EUR | NZD | reference | 2.0012 |
 | EUR | PAB | reference | 1.13525 |
 | EUR | PEN | reference | 3.90537 |
-| EUR | PHP | reference | 70.393 |
+| EUR | PHP | reference | 70.693 |
 
 [Full table on the Bank of Lithuania rates page](https://allratestoday.com/central-bank-rates-api/lb/) · Source: [Official rates published by LB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/lb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -299,7 +299,7 @@ curl "https://allratestoday.com/api/v1/central-bank/lb/latest?format=xml&api_key
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('lb')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate lb ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates

@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/lb').then
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by Bank of Lithuania — 86 rates, first 60 shown. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Bank of Lithuania — 86 rates, first 60 shown. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -56,41 +56,41 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 | EUR | ALL | reference | 92.04039 |
 | EUR | AMD | reference | 412.66338 |
 | EUR | ARS | reference | 1730.84489 |
-| EUR | AUD | reference | 1.6068 |
+| EUR | AUD | reference | 1.6056 |
 | EUR | AZN | reference | 1.92964 |
 | EUR | BAM | reference | 1.95587 |
 | EUR | BDT | reference | 139.60169 |
 | EUR | BHD | reference | 0.42799 |
 | EUR | BOB | reference | 13.64571 |
-| EUR | BRL | reference | 5.6633 |
+| EUR | BRL | reference | 5.6339 |
 | EUR | BYN | reference | 3.42726 |
-| EUR | CAD | reference | 1.5798 |
-| EUR | CHF | reference | 0.9261 |
+| EUR | CAD | reference | 1.5758 |
+| EUR | CHF | reference | 0.9237 |
 | EUR | CLP | reference | 1093.64876 |
-| EUR | CNY | reference | 7.4991 |
+| EUR | CNY | reference | 7.4894 |
 | EUR | COP | reference | 3816.7105 |
-| EUR | CZK | reference | 24.343 |
+| EUR | CZK | reference | 24.329 |
 | EUR | DJF | reference | 202.08858 |
-| EUR | DKK | reference | 7.4747 |
+| EUR | DKK | reference | 7.4746 |
 | EUR | DZD | reference | 151.65436 |
 | EUR | EGP | reference | 59.16923 |
 | EUR | ETB | reference | 182.63896 |
-| EUR | GBP | reference | 0.84205 |
+| EUR | GBP | reference | 0.84028 |
 | EUR | GEL | reference | 2.95733 |
 | EUR | GHS | reference | 13.23702 |
 | EUR | GNF | reference | 9985.47736 |
-| EUR | HKD | reference | 8.8097 |
-| EUR | HUF | reference | 363.4 |
-| EUR | IDR | reference | 20253.16 |
-| EUR | ILS | reference | 3.489 |
-| EUR | INR | reference | 106.559 |
+| EUR | HKD | reference | 8.8023 |
+| EUR | HUF | reference | 364.68 |
+| EUR | IDR | reference | 20170.57 |
+| EUR | ILS | reference | 3.4853 |
+| EUR | INR | reference | 106.459 |
 | EUR | IRR | reference | 1560514.65 |
-| EUR | ISK | reference | 136.4 |
+| EUR | ISK | reference | 136.2 |
 | EUR | JOD | reference | 0.80472 |
-| EUR | JPY | reference | 177.63 |
+| EUR | JPY | reference | 177.34 |
 | EUR | KES | reference | 147.23057 |
 | EUR | KGS | reference | 99.31224 |
-| EUR | KRW | reference | 1492.35 |
+| EUR | KRW | reference | 1489.17 |
 | EUR | KWD | reference | 0.35027 |
 | EUR | KZT | reference | 498.34069 |
 | EUR | LBP | reference | 101781.13392 |
@@ -102,15 +102,15 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 | EUR | MKD | reference | 61.6313 |
 | EUR | MNT | reference | 4078.38563 |
 | EUR | MUR | reference | 54.04931 |
-| EUR | MXN | reference | 20.7481 |
-| EUR | MYR | reference | 4.5826 |
+| EUR | MXN | reference | 20.7719 |
+| EUR | MYR | reference | 4.5788 |
 | EUR | MZN | reference | 72.70527 |
 | EUR | NGN | reference | 1510.16631 |
-| EUR | NOK | reference | 10.5555 |
-| EUR | NZD | reference | 1.9792 |
+| EUR | NOK | reference | 10.5245 |
+| EUR | NZD | reference | 1.9748 |
 | EUR | PAB | reference | 1.13525 |
 | EUR | PEN | reference | 3.90537 |
-| EUR | PHP | reference | 70.715 |
+| EUR | PHP | reference | 70.804 |
 
 </details>
 

@@ -32,7 +32,7 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-02 by Bank of Lithuania — 87 rates, first 60 shown. Updated 2026-11-02.</summary>
+<summary>Table as text: published 2026-11-03 by Bank of Lithuania — 87 rates, first 60 shown. Updated 2026-11-03.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -41,42 +41,42 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 | EUR | ALL | reference | 90.83674 |
 | EUR | AMD | reference | 401.9374 |
 | EUR | ARS | reference | 1714.0793 |
-| EUR | AUD | reference | 1.5904 |
+| EUR | AUD | reference | 1.6004 |
 | EUR | AZN | reference | 1.89194 |
 | EUR | BAM | reference | 1.95585 |
 | EUR | BDT | reference | 137.9978 |
 | EUR | BHD | reference | 0.42003 |
 | EUR | BOB | reference | 13.35523 |
-| EUR | BRL | reference | 6.0692 |
+| EUR | BRL | reference | 6.099 |
 | EUR | BYN | reference | 3.28353 |
-| EUR | CAD | reference | 1.5606 |
-| EUR | CHF | reference | 0.9194 |
+| EUR | CAD | reference | 1.5673 |
+| EUR | CHF | reference | 0.9193 |
 | EUR | CLP | reference | 1106.04043 |
-| EUR | CNY | reference | 7.4326 |
+| EUR | CNY | reference | 7.4567 |
 | EUR | COP | reference | 3525.06337 |
-| EUR | CZK | reference | 24.353 |
+| EUR | CZK | reference | 24.351 |
 | EUR | DJF | reference | 197.69931 |
-| EUR | DKK | reference | 7.4735 |
+| EUR | DKK | reference | 7.4737 |
 | EUR | DZD | reference | 150.73966 |
 | EUR | EGP | reference | 62.3867 |
 | EUR | ETB | reference | 182.72787 |
-| EUR | GBP | reference | 0.8338 |
+| EUR | GBP | reference | 0.8358 |
 | EUR | GEL | reference | 2.88816 |
 | EUR | GHS | reference | 12.95998 |
 | EUR | GNF | reference | 9815.34471 |
-| EUR | HKD | reference | 8.7652 |
-| EUR | HUF | reference | 366.33 |
-| EUR | IDR | reference | 20275.17 |
-| EUR | ILS | reference | 3.495 |
-| EUR | INR | reference | 106.084 |
+| EUR | HKD | reference | 8.8002 |
+| EUR | HUF | reference | 364.5 |
+| EUR | IDR | reference | 20341.45 |
+| EUR | ILS | reference | 3.521 |
+| EUR | INR | reference | 106.4505 |
 | EUR | IQD | reference | 1687.9144 |
 | EUR | IRR | reference | 2076101.31 |
-| EUR | ISK | reference | 136 |
+| EUR | ISK | reference | 136.2 |
 | EUR | JOD | reference | 0.78934 |
-| EUR | JPY | reference | 175.68 |
+| EUR | JPY | reference | 177.1 |
 | EUR | KES | reference | 144.63066 |
 | EUR | KGS | reference | 97.3685 |
-| EUR | KRW | reference | 1491.76 |
+| EUR | KRW | reference | 1506.2 |
 | EUR | KWD | reference | 0.34688 |
 | EUR | KZT | reference | 504.67082 |
 | EUR | LBP | reference | 99730.58933 |
@@ -88,12 +88,12 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 | EUR | MKD | reference | 61.56211 |
 | EUR | MNT | reference | 4003.2297 |
 | EUR | MUR | reference | 52.85867 |
-| EUR | MXN | reference | 21.1237 |
-| EUR | MYR | reference | 4.5325 |
+| EUR | MXN | reference | 20.9963 |
+| EUR | MYR | reference | 4.5655 |
 | EUR | MZN | reference | 71.07255 |
 | EUR | NGN | reference | 1499.1931 |
-| EUR | NOK | reference | 10.312 |
-| EUR | NZD | reference | 1.9823 |
+| EUR | NOK | reference | 10.3775 |
+| EUR | NZD | reference | 1.9934 |
 | EUR | PAB | reference | 1.1134 |
 | EUR | PEN | reference | 3.84401 |
 

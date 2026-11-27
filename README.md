@@ -32,7 +32,7 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-27 by Bank of Lithuania — 86 rates, first 60 shown. Updated 2026-11-27.</summary>
+<summary>Table as text: published 2026-11-27 by Bank of Lithuania — 87 rates, first 60 shown. Updated 2026-11-27.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -53,6 +53,7 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 | EUR | CHF | reference | 0.9153 |
 | EUR | CLP | reference | 1106.04043 |
 | EUR | CNY | reference | 7.3096 |
+| EUR | COP | reference | 3525.06337 |
 | EUR | CZK | reference | 24.453 |
 | EUR | DJF | reference | 197.69931 |
 | EUR | DKK | reference | 7.4737 |
@@ -95,7 +96,6 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 | EUR | NZD | reference | 2.0033 |
 | EUR | PAB | reference | 1.1134 |
 | EUR | PEN | reference | 3.84401 |
-| EUR | PHP | reference | 69.935 |
 
 </details>
 
